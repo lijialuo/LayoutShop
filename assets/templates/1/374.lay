@@ -1,0 +1,23 @@
+node attribute
+5
+1 1 0 10 10 560 830 0 0
+2 0 0 10 10 560 640 1 1
+3 0 0 10 670 560 170 0 1
+4 0 0 10 670 350 170 2 3
+5 0 0 380 670 190 170 2 3
+equal size
+0
+equal space
+0
+left align
+1
+2 3 1
+right align
+1
+2 3 1
+top align
+1
+4 5 3
+bottom align
+1
+4 5 3

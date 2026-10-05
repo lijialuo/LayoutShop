@@ -1,0 +1,2042 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LayoutShopClass</class>
+ <widget class="QMainWindow" name="LayoutShopClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>2556</width>
+    <height>1387</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>LayoutShop</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget
+{
+//background-color: rgb(232,232,232)
+}</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="1">
+     <widget class="QWidget" name="widget" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>7</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#widget{border-style: solid;border-width: 1px;border-radius: 5px;}</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="1">
+        <widget class="OutputView" name="output_view">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color:rgb(86, 86, 86)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <layout class="QGridLayout" name="gridLayout_5">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <item row="0" column="6">
+          <widget class="QSlider" name="horizontalSlider">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+             <horstretch>4</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="minimum">
+            <number>25</number>
+           </property>
+           <property name="maximum">
+            <number>200</number>
+           </property>
+           <property name="singleStep">
+            <number>25</number>
+           </property>
+           <property name="pageStep">
+            <number>25</number>
+           </property>
+           <property name="value">
+            <number>25</number>
+           </property>
+           <property name="sliderPosition">
+            <number>25</number>
+           </property>
+           <property name="tracking">
+            <bool>true</bool>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="invertedAppearance">
+            <bool>false</bool>
+           </property>
+           <property name="invertedControls">
+            <bool>false</bool>
+           </property>
+           <property name="tickPosition">
+            <enum>QSlider::TicksAbove</enum>
+           </property>
+           <property name="tickInterval">
+            <number>25</number>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="5">
+          <widget class="QComboBox" name="comboBox">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+             <horstretch>1</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="editable">
+            <bool>true</bool>
+           </property>
+           <property name="currentText">
+            <string/>
+           </property>
+           <property name="currentIndex">
+            <number>-1</number>
+           </property>
+           <property name="insertPolicy">
+            <enum>QComboBox::NoInsert</enum>
+           </property>
+           <property name="placeholderText" stdset="0">
+            <string/>
+           </property>
+           <item>
+            <property name="text">
+             <string>25%</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>50%</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>75%</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>100%</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>125%</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>150%</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>175%</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>200%</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QSpinBox" name="layout_index_box">
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::NoButtons</enum>
+           </property>
+           <property name="suffix">
+            <string/>
+           </property>
+           <property name="prefix">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QToolButton" name="next_layout_button">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+           <property name="icon">
+            <iconset resource="LayoutShop.qrc">
+             <normaloff>:/LayoutShop/resources/ui-icon/right.svg</normaloff>:/LayoutShop/resources/ui-icon/right.svg</iconset>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="4">
+          <widget class="QLabel" name="placeholder_label2">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+             <horstretch>4</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QToolButton" name="pre_layout_button">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+           <property name="icon">
+            <iconset resource="LayoutShop.qrc">
+             <normaloff>:/LayoutShop/resources/ui-icon/left.svg</normaloff>:/LayoutShop/resources/ui-icon/left.svg</iconset>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="placeholder_label1">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+             <horstretch>9</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QScrollArea" name="scrollArea_2">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>2</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="inputwidget">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>485</width>
+         <height>1334</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QLabel" name="title_label">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Title</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPlainTextEdit" name="title_input">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>1</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>4164374</width>
+            <height>16777215</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_9">
+          <item>
+           <widget class="QLabel" name="title_font_label">
+            <property name="text">
+             <string>Font</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="title_font_combo">
+            <item>
+             <property name="text">
+              <string>Times New Roman</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Arial</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Helvetica</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Optima</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Futura</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QLabel" name="font_size_label">
+            <property name="text">
+             <string>Size</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_6">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>from</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="min_title_font_size_box">
+            <property name="minimum">
+             <number>1</number>
+            </property>
+            <property name="maximum">
+             <number>50</number>
+            </property>
+            <property name="value">
+             <number>20</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_5">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>to</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="max_title_font_size_box">
+            <property name="minimum">
+             <number>1</number>
+            </property>
+            <property name="maximum">
+             <number>50</number>
+            </property>
+            <property name="value">
+             <number>30</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="Line" name="line">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QLabel" name="SectionLabel">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>1</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>Section</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="currentText">
+             <string>All</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>All</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>Add</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>Remove</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="Line" name="line_5">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="text_label">
+          <property name="text">
+           <string>Text</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPlainTextEdit" name="text_input">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>4</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>250</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPlainTextEdit
+{
+//background-color: white;
+}</string>
+          </property>
+          <property name="plainText">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_10">
+          <item>
+           <widget class="QLabel" name="text_font_label">
+            <property name="text">
+             <string>Font</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="text_font_combo">
+            <item>
+             <property name="text">
+              <string>Times New Roman</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Arial</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Helvetica</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Optima</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Futura</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QLabel" name="font_size_label_2">
+            <property name="text">
+             <string>Size</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_8">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>from</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="min_text_font_size_box">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimum">
+             <number>1</number>
+            </property>
+            <property name="maximum">
+             <number>40</number>
+            </property>
+            <property name="value">
+             <number>12</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_9">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>to</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="max_text_font_size_box">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimum">
+             <number>1</number>
+            </property>
+            <property name="maximum">
+             <number>40</number>
+            </property>
+            <property name="value">
+             <number>20</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="Line" name="line_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="picture_label">
+          <property name="text">
+           <string>Pictures</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QScrollArea" name="picture_area">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>2</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>155</height>
+           </size>
+          </property>
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="PictureBox" name="picture_box">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>459</width>
+             <height>153</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_11"/>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_7">
+          <item>
+           <widget class="QCheckBox" name="img_order_check">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+              <horstretch>1</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>Keep Images order</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="add_picture_button">
+            <property name="text">
+             <string>Add</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="Line" name="line_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="template_label">
+          <property name="text">
+           <string>Templates</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QScrollArea" name="template_area">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>2</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>200</height>
+           </size>
+          </property>
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="TemplateBox" name="template_box">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>459</width>
+             <height>198</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_13"/>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_8">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>1</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="select_template_button">
+            <property name="text">
+             <string>Select</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="Line" name="line_4">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_12">
+          <item>
+           <widget class="QCheckBox" name="multi_page_check">
+            <property name="text">
+             <string>Multi-Page</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <spacer name="horizontalSpacer_5">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="generate_button">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>Generate</string>
+            </property>
+            <property name="flat">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="clear_button">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>Clear</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QScrollArea" name="preview_list_scroll">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>1</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>249</width>
+         <height>1272</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+   <zorder>scrollArea_2</zorder>
+   <zorder>widget</zorder>
+   <zorder>preview_list_scroll</zorder>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>2556</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuGenerate">
+    <property name="title">
+     <string>Generate</string>
+    </property>
+    <addaction name="actionGenerate"/>
+   </widget>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionLoad_All"/>
+    <addaction name="separator"/>
+    <addaction name="actionSave_as_png"/>
+    <addaction name="actionSave_as_svg"/>
+    <addaction name="actionSave_as_json"/>
+    <addaction name="actionSave_as_pdf"/>
+    <addaction name="actionSave_All"/>
+    <addaction name="actionSave_GRIDS_Layout"/>
+    <addaction name="actionSave_Score_Img"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionRefine"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuGenerate"/>
+   <addaction name="menuEdit"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionundo"/>
+   <addaction name="separator"/>
+   <addaction name="actionEdit_Node_Size"/>
+   <addaction name="actionMove"/>
+   <addaction name="actionAddText"/>
+   <addaction name="actionAddPadding"/>
+   <addaction name="actionRemoveNode"/>
+   <addaction name="actionHorizontal_Align"/>
+   <addaction name="actionVertical_Align"/>
+   <addaction name="separator"/>
+   <addaction name="actionContentView"/>
+  </widget>
+  <action name="actionChoose">
+   <property name="text">
+    <string>Load Next Layout</string>
+   </property>
+  </action>
+  <action name="actionChoose_2">
+   <property name="text">
+    <string>Load Article</string>
+   </property>
+  </action>
+  <action name="actionLoad_Group">
+   <property name="text">
+    <string>Load Group</string>
+   </property>
+  </action>
+  <action name="actionPre">
+   <property name="text">
+    <string>Pre</string>
+   </property>
+  </action>
+  <action name="actionNext">
+   <property name="text">
+    <string>Next</string>
+   </property>
+  </action>
+  <action name="actionGenerate">
+   <property name="text">
+    <string>Generate</string>
+   </property>
+  </action>
+  <action name="actionLoad_All">
+   <property name="text">
+    <string>Input from JSON</string>
+   </property>
+  </action>
+  <action name="actionMultiPage">
+   <property name="text">
+    <string>Generate MultiPage</string>
+   </property>
+  </action>
+  <action name="actionEdit_Node_Size">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="LayoutShop.qrc">
+     <normaloff>:/LayoutShop/resources/ui-icon/resize_node.svg</normaloff>:/LayoutShop/resources/ui-icon/resize_node.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Edit Node Size</string>
+   </property>
+   <property name="toolTip">
+    <string>edit node size</string>
+   </property>
+  </action>
+  <action name="actionundo">
+   <property name="icon">
+    <iconset resource="LayoutShop.qrc">
+     <normaloff>:/LayoutShop/resources/ui-icon/undo.svg</normaloff>:/LayoutShop/resources/ui-icon/undo.svg</iconset>
+   </property>
+   <property name="text">
+    <string>undo</string>
+   </property>
+   <property name="toolTip">
+    <string>undo</string>
+   </property>
+  </action>
+  <action name="actionContentView">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="LayoutShop.qrc">
+     <normaloff>:/LayoutShop/resources/ui-icon/content.svg</normaloff>:/LayoutShop/resources/ui-icon/content.svg</iconset>
+   </property>
+   <property name="text">
+    <string>ContentView</string>
+   </property>
+   <property name="toolTip">
+    <string>content view</string>
+   </property>
+  </action>
+  <action name="actionMove">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="LayoutShop.qrc">
+     <normaloff>:/LayoutShop/resources/ui-icon/move.svg</normaloff>:/LayoutShop/resources/ui-icon/move.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Move</string>
+   </property>
+   <property name="toolTip">
+    <string>move</string>
+   </property>
+  </action>
+  <action name="actionAddText">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="LayoutShop.qrc">
+     <normaloff>:/LayoutShop/resources/ui-icon/text.svg</normaloff>:/LayoutShop/resources/ui-icon/text.svg</iconset>
+   </property>
+   <property name="text">
+    <string>AddText</string>
+   </property>
+   <property name="toolTip">
+    <string>add text nodes</string>
+   </property>
+  </action>
+  <action name="actionAddPadding">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="LayoutShop.qrc">
+     <normaloff>:/LayoutShop/resources/ui-icon/padding.svg</normaloff>:/LayoutShop/resources/ui-icon/padding.svg</iconset>
+   </property>
+   <property name="text">
+    <string>AddPadding</string>
+   </property>
+   <property name="toolTip">
+    <string>add padding nodes</string>
+   </property>
+  </action>
+  <action name="actionRemoveNode">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="LayoutShop.qrc">
+     <normaloff>:/LayoutShop/resources/ui-icon/remove.svg</normaloff>:/LayoutShop/resources/ui-icon/remove.svg</iconset>
+   </property>
+   <property name="text">
+    <string>RemoveNode</string>
+   </property>
+   <property name="toolTip">
+    <string>remove nodes</string>
+   </property>
+  </action>
+  <action name="actionOutput">
+   <property name="text">
+    <string>Output</string>
+   </property>
+  </action>
+  <action name="actionSave_as_png">
+   <property name="text">
+    <string>Save as PNG</string>
+   </property>
+  </action>
+  <action name="actionSave_as_svg">
+   <property name="text">
+    <string>Save as SVG</string>
+   </property>
+  </action>
+  <action name="actionSave_as_json">
+   <property name="text">
+    <string>Save as JSON</string>
+   </property>
+  </action>
+  <action name="actionSave_as_pdf">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Save as PDF</string>
+   </property>
+   <property name="visible">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="actionSave_All">
+   <property name="text">
+    <string>Save All</string>
+   </property>
+  </action>
+  <action name="actionRefine">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Refine</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="text">
+    <string>Undo</string>
+   </property>
+  </action>
+  <action name="actionResize">
+   <property name="text">
+    <string>Resize</string>
+   </property>
+  </action>
+  <action name="actionMove_2">
+   <property name="text">
+    <string>Move</string>
+   </property>
+  </action>
+  <action name="actionAdd_Text">
+   <property name="text">
+    <string>Add Text</string>
+   </property>
+  </action>
+  <action name="actionAdd_Padding">
+   <property name="text">
+    <string>Add Padding</string>
+   </property>
+  </action>
+  <action name="actionRemove">
+   <property name="text">
+    <string>Remove</string>
+   </property>
+  </action>
+  <action name="actionView_Content">
+   <property name="text">
+    <string>View Content</string>
+   </property>
+  </action>
+  <action name="actionHorizontal_Align">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="LayoutShop.qrc">
+     <normaloff>:/LayoutShop/resources/ui-icon/horizontal_align.svg</normaloff>:/LayoutShop/resources/ui-icon/horizontal_align.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Horizontal Align</string>
+   </property>
+   <property name="visible">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="actionVertical_Align">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="LayoutShop.qrc">
+     <normaloff>:/LayoutShop/resources/ui-icon/vertical_align.svg</normaloff>:/LayoutShop/resources/ui-icon/vertical_align.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Vertical Align</string>
+   </property>
+   <property name="visible">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="actionSave_GRIDS_Layout">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Save GRIDS Layout</string>
+   </property>
+   <property name="visible">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="actionSave_Score_Img">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Save Score Img</string>
+   </property>
+   <property name="visible">
+    <bool>false</bool>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>TemplateBox</class>
+   <extends>QWidget</extends>
+   <header>TemplateBox.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>OutputView</class>
+   <extends>QGraphicsView</extends>
+   <header>OutputView.h</header>
+   <slots>
+    <slot>scaleLayout(int)</slot>
+   </slots>
+  </customwidget>
+  <customwidget>
+   <class>PictureBox</class>
+   <extends>QWidget</extends>
+   <header>PictureBox.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="LayoutShop.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actionPre</sender>
+   <signal>triggered()</signal>
+   <receiver>LayoutShopClass</receiver>
+   <slot>PreLayout()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>933</x>
+     <y>538</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionNext</sender>
+   <signal>triggered()</signal>
+   <receiver>LayoutShopClass</receiver>
+   <slot>NextLayout()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>933</x>
+     <y>538</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionLoad_Group</sender>
+   <signal>triggered()</signal>
+   <receiver>LayoutShopClass</receiver>
+   <slot>OpenLayoutGroup()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>933</x>
+     <y>538</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionChoose_2</sender>
+   <signal>triggered()</signal>
+   <receiver>LayoutShopClass</receiver>
+   <slot>LoadArticle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>933</x>
+     <y>538</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionChoose</sender>
+   <signal>triggered()</signal>
+   <receiver>LayoutShopClass</receiver>
+   <slot>OpenNextLayout()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>933</x>
+     <y>538</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionGenerate</sender>
+   <signal>triggered()</signal>
+   <receiver>LayoutShopClass</receiver>
+   <slot>GenerateButtonPush()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>513</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>output_view</receiver>
+   <slot>scaleLayout(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>2272</x>
+     <y>1339</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>861</x>
+     <y>412</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>LayoutShopClass</receiver>
+   <slot>comboBoxSelect(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1914</x>
+     <y>1339</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>740</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>LayoutShopClass</receiver>
+   <slot>sliderToComboBox(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>2272</x>
+     <y>1339</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>848</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pre_layout_button</sender>
+   <signal>clicked()</signal>
+   <receiver>LayoutShopClass</receiver>
+   <slot>PreLayout()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1363</x>
+     <y>1337</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1180</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>next_layout_button</sender>
+   <signal>clicked()</signal>
+   <receiver>LayoutShopClass</receiver>
+   <slot>NextLayout()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1453</x>
+     <y>1337</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1305</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>layout_index_box</sender>
+   <signal>editingFinished()</signal>
+   <receiver>LayoutShopClass</receiver>
+   <slot>LayoutIndexInputChange()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1417</x>
+     <y>1336</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>524</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionLoad_All</sender>
+   <signal>triggered()</signal>
+   <receiver>LayoutShopClass</receiver>
+   <slot>LoadAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>804</x>
+     <y>501</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionEdit_Node_Size</sender>
+   <signal>triggered()</signal>
+   <receiver>LayoutShopClass</receiver>
+   <slot>ActiveEditNodeSize()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>804</x>
+     <y>501</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionundo</sender>
+   <signal>triggered()</signal>
+   <receiver>LayoutShopClass</receiver>
+   <slot>Undo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>804</x>
+     <y>501</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionContentView</sender>
+   <signal>triggered()</signal>
+   <receiver>LayoutShopClass</receiver>
+   <slot>clickViewContentButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>804</x>
+     <y>501</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionMove</sender>
+   <signal>triggered()</signal>
+   <receiver>LayoutShopClass</receiver>
+   <slot>ActiveMoveNode()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>804</x>
+     <y>501</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionAddText</sender>
+   <signal>triggered()</signal>
+   <receiver>LayoutShopClass</receiver>
+   <slot>ActiveAddText()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>800</x>
+     <y>490</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionAddPadding</sender>
+   <signal>triggered()</signal>
+   <receiver>LayoutShopClass</receiver>
+   <slot>ActiveAddPadding()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>800</x>
+     <y>490</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionRemoveNode</sender>
+   <signal>triggered()</signal>
+   <receiver>LayoutShopClass</receiver>
+   <slot>ActiveRemoveNode()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>800</x>
+     <y>490</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionOutput</sender>
+   <signal>triggered()</signal>
+   <receiver>LayoutShopClass</receiver>
+   <slot>SaveOutput()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>753</x>
+     <y>457</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>add_picture_button</sender>
+   <signal>clicked()</signal>
+   <receiver>LayoutShopClass</receiver>
+   <slot>AddPicture()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>486</x>
+     <y>907</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>753</x>
+     <y>452</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>select_template_button</sender>
+   <signal>clicked()</signal>
+   <receiver>LayoutShopClass</receiver>
+   <slot>SelectTemplate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>486</x>
+     <y>1228</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>753</x>
+     <y>457</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>generate_button</sender>
+   <signal>clicked()</signal>
+   <receiver>LayoutShopClass</receiver>
+   <slot>GenerateButtonPush()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>414</x>
+     <y>1345</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>611</x>
+     <y>880</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSave_as_png</sender>
+   <signal>triggered()</signal>
+   <receiver>LayoutShopClass</receiver>
+   <slot>OutputImage()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>753</x>
+     <y>457</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSave_as_json</sender>
+   <signal>triggered()</signal>
+   <receiver>LayoutShopClass</receiver>
+   <slot>OutputJSON()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>753</x>
+     <y>457</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSave_as_svg</sender>
+   <signal>triggered()</signal>
+   <receiver>LayoutShopClass</receiver>
+   <slot>OutputSVG()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>753</x>
+     <y>457</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSave_as_pdf</sender>
+   <signal>triggered()</signal>
+   <receiver>LayoutShopClass</receiver>
+   <slot>OutputPDF()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>753</x>
+     <y>457</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSave_All</sender>
+   <signal>triggered()</signal>
+   <receiver>LayoutShopClass</receiver>
+   <slot>OutputAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>753</x>
+     <y>457</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>clear_button</sender>
+   <signal>clicked()</signal>
+   <receiver>LayoutShopClass</receiver>
+   <slot>ClearInput()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>486</x>
+     <y>1345</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>440</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionRefine</sender>
+   <signal>triggered()</signal>
+   <receiver>LayoutShopClass</receiver>
+   <slot>RefineTrigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1277</x>
+     <y>693</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionUndo</sender>
+   <signal>triggered()</signal>
+   <receiver>LayoutShopClass</receiver>
+   <slot>Undo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1277</x>
+     <y>693</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionResize</sender>
+   <signal>triggered()</signal>
+   <receiver>LayoutShopClass</receiver>
+   <slot>ActiveEditNodeSize()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1277</x>
+     <y>693</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionMove_2</sender>
+   <signal>triggered()</signal>
+   <receiver>LayoutShopClass</receiver>
+   <slot>ActiveMoveNode()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1277</x>
+     <y>693</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionAdd_Text</sender>
+   <signal>triggered()</signal>
+   <receiver>LayoutShopClass</receiver>
+   <slot>ActiveAddText()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1277</x>
+     <y>693</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionAdd_Padding</sender>
+   <signal>triggered()</signal>
+   <receiver>LayoutShopClass</receiver>
+   <slot>ActiveAddPadding()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1277</x>
+     <y>693</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionRemove</sender>
+   <signal>triggered()</signal>
+   <receiver>LayoutShopClass</receiver>
+   <slot>ActiveRemoveNode()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1277</x>
+     <y>693</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionView_Content</sender>
+   <signal>triggered()</signal>
+   <receiver>LayoutShopClass</receiver>
+   <slot>clickViewContentButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1277</x>
+     <y>693</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionHorizontal_Align</sender>
+   <signal>triggered()</signal>
+   <receiver>LayoutShopClass</receiver>
+   <slot>ActiveHorizontalAlign()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1277</x>
+     <y>693</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionVertical_Align</sender>
+   <signal>triggered()</signal>
+   <receiver>LayoutShopClass</receiver>
+   <slot>ActiveVerticalAlign()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1277</x>
+     <y>693</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSave_GRIDS_Layout</sender>
+   <signal>triggered()</signal>
+   <receiver>LayoutShopClass</receiver>
+   <slot>SaveGRIDSLayout()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>753</x>
+     <y>457</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSave_Score_Img</sender>
+   <signal>triggered()</signal>
+   <receiver>LayoutShopClass</receiver>
+   <slot>OutputImgScoreRender()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1279</x>
+     <y>693</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>LoadArticle()</slot>
+  <slot>OpenNextLayout()</slot>
+  <slot>OpenLayoutGroup()</slot>
+  <slot>GenerateLayout()</slot>
+  <slot>PreLayout()</slot>
+  <slot>NextLayout()</slot>
+  <slot>MatLabOutputMat()</slot>
+  <slot>MatLabInputMat()</slot>
+  <slot>ClickConfirm()</slot>
+  <slot>ClickEdit()</slot>
+  <slot>ClickClear()</slot>
+  <slot>ClickUp()</slot>
+  <slot>ClickDown()</slot>
+  <slot>Editresult()</slot>
+  <slot>Confirmresult()</slot>
+  <slot>Confirmlayouts()</slot>
+  <slot>Clearlayouts()</slot>
+  <slot>comboBoxSelect(int)</slot>
+  <slot>sliderToComboBox(int)</slot>
+  <slot>clickViewContentButton()</slot>
+  <slot>clickViewGridButton()</slot>
+  <slot>PageUp()</slot>
+  <slot>PageDown()</slot>
+  <slot>LayoutIndexInputChange()</slot>
+  <slot>ReceivePreviewIndex(int)</slot>
+  <slot>LoadAll()</slot>
+  <slot>GenerateLayoutMultiPage()</slot>
+  <slot>ActiveEditNodeSize()</slot>
+  <slot>Undo()</slot>
+  <slot>ActiveMoveNode()</slot>
+  <slot>ActiveAddText()</slot>
+  <slot>ActiveAddPadding()</slot>
+  <slot>ActiveRemoveNode()</slot>
+  <slot>SaveOutput()</slot>
+  <slot>AddPicture()</slot>
+  <slot>SelectTemplate()</slot>
+  <slot>GenerateButtonPush()</slot>
+  <slot>OutputImage()</slot>
+  <slot>OutputJSON()</slot>
+  <slot>OutputSVG()</slot>
+  <slot>OutputPDF()</slot>
+  <slot>OutputAll()</slot>
+  <slot>ClearInput()</slot>
+  <slot>RefineTrigger()</slot>
+  <slot>ActiveHorizontalAlign()</slot>
+  <slot>ActiveVerticalAlign()</slot>
+  <slot>SaveGRIDSLayout()</slot>
+  <slot>OutputImgScoreRender()</slot>
+ </slots>
+</ui>

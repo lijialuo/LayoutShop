@@ -1,0 +1,35 @@
+<RCC>
+  <qresource prefix="/LayoutShop">
+    <file alias="resources/ui-icon/vertical_align.svg">../assets/resources/ui-icon/vertical_align.svg</file>
+    <file alias="resources/ui-icon/horizontal_align.svg">../assets/resources/ui-icon/horizontal_align.svg</file>
+    <file alias="resources/ui-icon/align-bottom.svg">../assets/resources/ui-icon/align-bottom.svg</file>
+    <file alias="resources/ui-icon/align-center.svg">../assets/resources/ui-icon/align-center.svg</file>
+    <file alias="resources/ui-icon/align-left.svg">../assets/resources/ui-icon/align-left.svg</file>
+    <file alias="resources/ui-icon/align-middle.svg">../assets/resources/ui-icon/align-middle.svg</file>
+    <file alias="resources/ui-icon/align-right.svg">../assets/resources/ui-icon/align-right.svg</file>
+    <file alias="resources/ui-icon/align-top.svg">../assets/resources/ui-icon/align-top.svg</file>
+    <file alias="resources/ui-icon/minus.svg">../assets/resources/ui-icon/minus.svg</file>
+    <file alias="resources/ui-icon/plus.svg">../assets/resources/ui-icon/plus.svg</file>
+    <file alias="resources/ui-icon/rotate.svg">../assets/resources/ui-icon/rotate.svg</file>
+    <file alias="resources/ui-icon/unlock.svg">../assets/resources/ui-icon/unlock.svg</file>
+    <file alias="resources/ui-icon/lock.svg">../assets/resources/ui-icon/lock.svg</file>
+    <file alias="resources/ui-icon/remove.svg">../assets/resources/ui-icon/remove.svg</file>
+    <file alias="resources/ui-icon/padding.svg">../assets/resources/ui-icon/padding.svg</file>
+    <file alias="resources/ui-icon/text.svg">../assets/resources/ui-icon/text.svg</file>
+    <file alias="resources/ui-icon/move.svg">../assets/resources/ui-icon/move.svg</file>
+    <file alias="resources/ui-icon/undo.svg">../assets/resources/ui-icon/undo.svg</file>
+    <file alias="resources/ui-icon/resize_node.svg">../assets/resources/ui-icon/resize_node.svg</file>
+    <file alias="resources/ui-icon/content.svg">../assets/resources/ui-icon/content.svg</file>
+    <file alias="resources/ui-icon/content-select.svg">../assets/resources/ui-icon/content-select.svg</file>
+    <file alias="resources/ui-icon/grid.svg">../assets/resources/ui-icon/grid.svg</file>
+    <file alias="resources/ui-icon/grid-select.svg">../assets/resources/ui-icon/grid-select.svg</file>
+    <file alias="resources/ui-icon/up.svg">../assets/resources/ui-icon/up.svg</file>
+    <file alias="resources/ui-icon/down.svg">../assets/resources/ui-icon/down.svg</file>
+    <file alias="resources/ui-icon/left.svg">../assets/resources/ui-icon/left.svg</file>
+    <file alias="resources/ui-icon/right.svg">../assets/resources/ui-icon/right.svg</file>
+    <file alias="resources/ui-icon/remove-cursor.png">../assets/resources/ui-icon/remove-cursor.png</file>
+    <file alias="resources/layout-icon/header-white.svg">../assets/resources/layout-icon/header-white.svg</file>
+    <file alias="resources/layout-icon/text-white.svg">../assets/resources/layout-icon/text-white.svg</file>
+    <file alias="resources/layout-icon/image.svg">../assets/resources/layout-icon/image.svg</file>
+  </qresource>
+</RCC>
